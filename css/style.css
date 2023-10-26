@@ -259,7 +259,7 @@ button:focus{
 
 .bar{
     display: flex;
-    flex-direction: colum;
+    flex-direction: column;
     padding: 1rem;
     gap:0.5rem;
 }
@@ -377,4 +377,39 @@ button:focus{
     width: 50px;
     height: 2px;
     background-color: var(--color-accent);
+}
+
+/* Testimonial */
+.testimoials{
+    margin: 3rem;
+}
+
+.testimoial{
+    display: flex;
+    gap: 2rem;
+    align-items:center;
+    margin-bottom: 2rem;
+}
+
+.testimoial:nth-child(even) .testimoial__img{
+    order:1;
+}
+
+.testimoial__img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.testimoinal__bubble{
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.testimonial__bubble__name{
+    color: var(--color-accent);
+    font-weight: bold;
+    filter: brightness(70%);
 }
