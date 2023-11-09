@@ -13,20 +13,23 @@
     <!-- OG Open Graph Data -->
     <meta property="og:title" content="성원의 포트폴리오" />
     <meta property="og:type" content="website" />
-    <meta propertt="og:url" content="배포후에 생성된 URL" />
-    <meta property="og:image" content="배포후에 생성된 image" />
+    <meta propertt="og:url" content="https://nomercykim.github.io/portfolio/" />
+    <meta property="og:image" content="https://nomercykim.github.io/portfolio/image/og.webp" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
     <!-- Font Awsome -->
     <script src="https://kit.fontawesome.com/9359c020ac.js" crossorigin="anonymous"></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Javacript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -56,7 +59,7 @@
         <section id="home">
             <div class="home__container">
                 <img class="home__avatar" scr="images/profile.png" alt="SeongWon's profile"/>
-            <h2 class="home__title" >Hello <br/> I&#39;m <strong class="home__title--strong">Dream Coder</strong>, SeongWon</h2>
+            <h2 class="home__title" aria-label="Hello, I'm Dream Coder SeongWon">Hello <br/> I&#39;m <strong class="home__title--strong">Dream Coder</strong>, SeongWon</h2>
             <p class="home__description">A software engineer currently residing in Incheon</p>
             <a class="home__contact" href="#contact">Contact Me</a>
             </div>
@@ -186,7 +189,7 @@
                     </ul>
                 </section>
             </div>
-          </div>
+        </div>
         </section>
         <!-- Work -->
         <section id="work" class="section">
